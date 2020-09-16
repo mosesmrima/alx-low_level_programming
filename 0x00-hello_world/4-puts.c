@@ -1,16 +1,14 @@
 #include <stdio.h>
 
 /**
-* main starting  point
+* main -  starting  point
+*Description: outputs "\"Programming is like building a multilingual puzzle"
+*Return: 0
 */
 
 int main(void)
 
 {
-
-char string[]  = "\"Programming is like building a multilingual puzzle";
-
-puts(s);
-
+puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
