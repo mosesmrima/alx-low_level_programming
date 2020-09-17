@@ -18,8 +18,12 @@ int main(void)
 		{
 			putchar(i);
 			putchar(x);
-			putchar(44);
-			putchar(32);
+			if (i == 57 && x == 57)
+			{
+				break;
+			}
+				putchar(44);
+				putchar(32);
 			x++;
 		}
 		i++;
