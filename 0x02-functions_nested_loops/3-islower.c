@@ -1,4 +1,4 @@
-#imclude "holberton.h"
+#include "holberton.h"
 
 /**
  *_islower - a fuction to check whether the given char is lowercase
@@ -7,7 +7,6 @@
  */
 int _islower(int c)
 {
-	int c;
 
 	if (c >= 97 && c <= 122)
 	{
