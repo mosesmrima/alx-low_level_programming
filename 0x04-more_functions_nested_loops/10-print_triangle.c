@@ -3,21 +3,23 @@
  *print_triangle - prints a triangle
  *@size: param
  */
+
+
 void print_triangle(int size)
 {
-	int h, i;
+	int hash, index;
 
 	if (size > 0)
 	{
-		for (h = 1; h <= size; h++)
+		for (hash = 1; hash <= size; hash++)
 		{
-			for (i = size - h; i > 0; i--)
+			for (index = size - hash; index > 0; index--)
 				_putchar(' ');
 
-			for (i = 0; i < ; i++)
+			for (index = 0; index < hash; index++)
 				_putchar('#');
 
-			if (h == size)
+			if (hash == size)
 				continue;
 
 			_putchar('\n');
