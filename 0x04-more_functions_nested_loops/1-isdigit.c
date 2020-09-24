@@ -3,6 +3,7 @@
 /**
  *_isdigit - checks whether number is between 0 and 9
  *Return: 1 on true 0 on false
+ *
  *@c: the param
  */
 int _isdigit(int c)
