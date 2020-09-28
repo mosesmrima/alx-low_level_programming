@@ -1,10 +1,10 @@
-/*
- *header file for all functions used in this project
- *
- */
-
 #ifndef HEADER_FILE
 #define HEADER_FILE
+/*
+ *header file
+ *Author: Moses Mrima
+ *Desc: header file containing for all functions
+ */
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
