@@ -11,12 +11,17 @@
 
 void print_array(int *a, int n)
 {
-	int c = 0;
+	int index;
 
-	while (c < n)
+	for (index = 0; index < n; index++)
 	{
-		printf("%d, ", *(a + c));
-		c++;
+		printf("%d", a[index]);
+
+		if (index == n - 1)
+			continue;
+
+		printf(", ");
 	}
+
 	printf("\n");
 }
