@@ -1,12 +1,12 @@
 #include "holberton.h"
 /**
- *strcat - function to cat strings
+ *_strcat - function to cat strings
  *@dest: param 1
  *@src: param 2
  *Return: char pointer
  */
 
-char *strcat(char *dest, const char *src)
+char *_strcat(char *dest, const char *src)
 {
 	int index = 0, dest_len = 0;
 
