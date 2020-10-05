@@ -18,9 +18,9 @@ char *_strpbrk(char *s, char *accept)
 		{
 			return (s);
 		}
-		else if (accept[index] == NULL)
+		else if (accept[index] == '\0')
 		{
-			return (NULL);
+			return ('\0');
 		}
 		index++;
 	}
