@@ -16,16 +16,16 @@ char *_strchr(char *s, char c)
 
 	int index;
 
-	while (s[index])
+	while (string[index])
 	{
-		if (s[index] == character)
+		if (string[index] == character)
 		{
-			return (*(s + index));
+			return (string + index);
 		}
 
 		else
 		{
-			return (NULL);
+			return ('\0');
 		}
 
 		index++;
