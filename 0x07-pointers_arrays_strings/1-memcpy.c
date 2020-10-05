@@ -22,5 +22,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		to[index] = from[index];
 	}
 
-	return (to);
+	return (dest);
 }
