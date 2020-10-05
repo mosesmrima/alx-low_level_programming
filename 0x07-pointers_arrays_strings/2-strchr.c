@@ -14,7 +14,7 @@ char *_strchr(char *s, char c)
 
 	char character = c;
 
-	int index;
+	int index = 0;
 
 	while (string[index])
 	{
