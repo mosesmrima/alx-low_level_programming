@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
 	arg1 = atoi(argv[1]);
 	arg2 = atoi(argv[2]);
-	prod = num1 * num2;
+	prod = arg1 * arg2;
 
 	printf("%d\n", prod);
 
