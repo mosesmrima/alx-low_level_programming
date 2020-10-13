@@ -8,14 +8,15 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int lt;
+	int lt = 0, index;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
-	lt = sizeof(s1) + sizeof(s2);
+	for (index = 0; s1[index] || s2[index]; index++)
+		lt++;
 
 	char *catstrng = malloc(sizeof(char) * lt);
 
