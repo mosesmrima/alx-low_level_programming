@@ -9,34 +9,34 @@
  */
 char *argstostr(int ac, char **av)
 {
-	char *whole;
-	int argvv, letter, i, size = ac;
+	har *str;
+	int arg, byte, index, size = ac;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	for (argvv = 0; argvv < ac; argvv++)
+	for (arg = 0; arg < ac; arg++)
 	{
-		for (letter = 0; av[argvv][letter]; letter++)
+		for (byte = 0; av[arg][byte]; byte++)
 			size++;
 	}
 
-	whole = malloc(sizeof(char) * size + 1);
+	str = malloc(sizeof(char) * size + 1);
 
-	if (whole == NULL)
+	if (str == NULL)
 		return (NULL);
 
-	i = 0;
+	index = 0;
 
-	for (argvv = 0; argvv < ac; argvv++)
+	for (arg = 0; arg < ac; arg++)
 	{
-		for (letter = 0; av[argvv][letter]; letter++)
-			str[i++] = av[argvv][letter];
+		for (byte = 0; av[arg][byte]; byte++)
+			str[index++] = av[arg][byte];
 
-		str[i++] = '\n';
+		str[index++] = '\n';
 	}
 
-	whole[size] = '\0';
+	str[size] = '\0';
 
-	return (whole);
+	return (str);
 }
