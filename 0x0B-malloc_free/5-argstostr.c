@@ -9,7 +9,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	har *str;
+	char *str;
 	int arg, byte, index, size = ac;
 
 	if (ac == 0 || av == NULL)
