@@ -1,5 +1,5 @@
-#ifndef OBJECT_LIKE_MACRO_H
-#define OBJECT_LIKE_MACRO_H
+#ifndef MACRO_FILE
+#define MACRO_FILE
 
 /*
  * File: 0-object_like_macro.h
