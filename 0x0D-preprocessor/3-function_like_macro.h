@@ -2,7 +2,7 @@
 #define MACRO_H_FILE
 
 /*
- *
+ *file: function like macro
  * Desc: Header file containginf function like macro
  */
 
