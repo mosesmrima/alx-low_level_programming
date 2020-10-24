@@ -20,8 +20,8 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		sum += var_arg(valist, int);
+		sum += va_arg(valist, int);
 	}
-	var_end(valist);
+	va_end(valist);
 	return (sum);
 }
