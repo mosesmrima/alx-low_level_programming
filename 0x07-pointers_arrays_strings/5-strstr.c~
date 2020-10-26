@@ -1,0 +1,22 @@
+char *_strstr(char *haystack, char *needle)
+{
+	int count = 0;
+
+	int index;
+
+	while (*haystack)
+	{
+		for (index = 0; accept[index]; index++)
+		{
+			if (*haystack == accept[index)
+				{
+					count++;
+					break;
+				}
+				else if (accept[index +1] == '\0')
+					return (bytes);
+		}
+			haystack++;
+	}
+		return (bytes);
+}
