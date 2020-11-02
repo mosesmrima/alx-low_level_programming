@@ -5,13 +5,14 @@
  *add_node - function to add node at front
  *@head: pointer to first node
  *@str: string to initialize the str member of the struct
- *return: NULL on fail, else address of new node
+ *Return: NULL on fail, else address of new node
  */
 
 
 list_t *add_node(list_t **head, const char *str)
 {
 	char *str_buff;
+
 	str_buff = str;
 
 	if (str_buff == NULL)
@@ -26,9 +27,9 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	new_node -> str = strdup(str);
-	new_node -> len = strlen(str_buff);
-	new_node -> next = *head;
+	new_node->str = strdup(str);
+	new_node->len = strlen(str_buff);
+	new_node->next = *head;
 	*head = new_node;
 
 	return (new_node);
