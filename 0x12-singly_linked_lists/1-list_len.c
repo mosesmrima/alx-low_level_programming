@@ -2,6 +2,9 @@
 #include "lists.h"
 
 /**
+ *list_len - returns length of linked list
+ *@h: head pointer
+ *Return: size of linked list
  */
 size_t list_len(const list_t *h)
 {
@@ -11,7 +14,7 @@ size_t list_len(const list_t *h)
 	{
 		len++;
 
-		h = h -> next;
+		h = h->next;
 	}
 
 	return (len);
