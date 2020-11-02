@@ -4,7 +4,7 @@
 /**
  *print_list - function to print members of a linked list
  *@h: pointer to the 1st membe of the linked list
- *return: sze of the linked list
+ *Return: sze of the linked list
  */
 
 size_t print_list(const list_t *h)
@@ -13,17 +13,17 @@ size_t print_list(const list_t *h)
 
 	while (h != NULL)
 	{
-		if (h -> str == NULL)
+		if (h->str == NULL)
 		{
 			printf("[0] nil\n");
 		}
 		else
 		{
-			printf("[%lu] %s\n", strlen(h -> str), h -> str);
+			printf("[%lu] %s\n", strlen(h->str), h->str);
 		}
 		len++;
 
-		h = h -> next;
+		h = h->next;
 	}
 
 	return (len);
