@@ -8,29 +8,31 @@
  *Return: NULL on fail, else address of new node
  */
 
-
 list_t *add_node(list_t **head, const char *str)
 {
-	char *str_buff;
+	char *dup;
+	int len;
+	list_t *new;
 
-	str_buff = strdup(str);
+	new = malloc(sizeof(list_t));
+	if (new == NULL)
+		return (NULL);
 
-	if (str_buff == NULL)
+	dup = strdup(str);
+	if (dup == NULL)
 	{
+		free(new);
 		return (NULL);
 	}
 
-	list_t *new_node = malloc(sizeof(list_t));
+	for (len = 0; str[len];)
+		len++;
 
-	if (new_node == NULL)
-	{
-		return (NULL);
-	}
+	new->str = dup;
+	new->len = len;
+	new->next = *head;
 
-	new_node->str = str_buff;
-	new_node->len = strlen(str_buff);
-	new_node->next = *head;
-	*head = new_node;
+	*head = new;
 
-	return (new_node);
+	return (new);
 }
