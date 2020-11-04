@@ -3,23 +3,30 @@
 /**
  * get_nodeint_at_index - Locates a given node of
  *                        a listint_t linked list.
- * @head: A pointer to the head of the listint_t list.
- * @index: The index of the node to locate - indices start at 0.
- *
- * Return: If the node does not exist - NULL.
- *         Otherwise - the located node.
+ * @head: pointer to start of list
+ * @index: index of node to locate
+ *Return: the node if found, else null
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	unsigned int node;
+	unsigned int nth_node = 0;
+	listint_t *temp;
 
-	for (node = 0; node < index; node++)
+	temp = head;
+
+	while (index != nth_node)
 	{
-		if (head == NULL)
+		if (temp == NULL)
+		{
 			return (NULL);
+		}
+		temp = temp->next;
 
-		head = head->next;
+		nth_node++;
 	}
-
-	return (head);
+	if (temp == NULL)
+	{
+		return (NULL);
+	}
+	return (temp);
 }
