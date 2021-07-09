@@ -1,6 +1,8 @@
 #ifndef DSA_HASH_TABLES_H
 #define DSA_HASH_TABLES_H
 #include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * struct hash_node_s - Node of a hash table
  *
